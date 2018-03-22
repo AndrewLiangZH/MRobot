@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="cn-ZH"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/sign-head :: sign-head}">
+</head>
+<body>
+
+<div class="container">
+
+    <form class="form-sign" th:action="@{/login}" th:method="post">
+        <h2 class="form-sign-heading">Sign in to TaaS</h2>
+        <label for="inputUsernameOrEmail" class="sr-only">Username or mail address</label>
+        <input type="text" id="inputUsernameOrEmail" name="username" class="form-control" placeholder="Username or email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+
+</div>
+<!-- /container -->
+
+<div th:replace="~{fragments/footer :: footer}"></div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="cn-ZH"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar" data-th-fragment="lefter">
+    <ul class="nav nav-pills flex-column">
+        <li class="nav-item menu-list" th:each="menu : ${menuList.list}">
+            <a class="nav-link menu-list-item" href="javascript:void(0)" th:text="${menu.name}" th:attr="url=${menu.url}">Overview <span class="sr-only">(current)</span></a>
+        </li>
+    </ul>
+</nav>
+
+</body>
+</html>

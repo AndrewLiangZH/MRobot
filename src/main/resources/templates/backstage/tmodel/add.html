@@ -1,0 +1,21 @@
+<div class="container">
+ 
+<form th:action="@{/tmodel}" method="post" th:object="${tm_Model.tModel}" id="tModelForm">
+	<input type="hidden" name="id" th:value="*{id}">
+	
+	<div class="form-group">
+		<label for="name" class="col-form-label">Name</label>
+		<input type="text" class="form-control" id="name" name="name"  th:value="*{name}" maxlength="40" placeholder="Please enter a TModel Name (3-20)">
+	</div>
+	<div class="form-group">
+		<label for="url" class="col-form-label">Url</label>
+		<input type="text" class="form-control" id="url" name="url" th:value="*{url}" maxlength="100" placeholder="Please enter the url of TModel">
+	</div>
+	<div class="form-group">
+		<label for="description" class="col-form-label">Description</label>
+		<input type="text" class="form-control" id="description" name="description" th:value="*{description}" maxlength="128" placeholder="Please enter the brief description of TModel" >
+	</div>
+</form>
+ 
+</div><!-- /.container -->
+ 

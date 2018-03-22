@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="cn-ZH"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/header-login :: header}">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Left container -->
+        <div th:replace="~{fragments/lefter :: lefter}"></div>
+
+        <!-- Right container -->
+        <main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main" id="rightContainer">
+
+        </main>
+    </div>
+</div>
+
+<div th:replace="~{fragments/footer :: footer}">...</div>
+</body>
+</html>
