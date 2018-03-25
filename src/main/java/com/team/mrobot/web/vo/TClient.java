@@ -1,11 +1,5 @@
 package com.team.mrobot.web.vo;
 
-/**
- * Project: TaaS
- * Author: AndrewLiang
- * Date: 2017/9/24
- * Description:
- */
 public class TClient {
 
     private static final String appKey = "69385dcff8debe1ffda23caf";

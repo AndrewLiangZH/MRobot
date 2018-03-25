@@ -1,11 +1,5 @@
 package com.team.mrobot.web.vo;
 
-/**
- * Project: TaaS
- * Author: AndrewLiang
- * Date: 2017/9/23
- * Description: Return Object of Response
- */
 public class Response {
 
     private boolean success;//Judge the success or not

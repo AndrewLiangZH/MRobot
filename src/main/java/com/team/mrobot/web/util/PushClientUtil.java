@@ -14,13 +14,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import com.team.mrobot.web.vo.TClient;
 
-/**
- * Project: TaaS
- * Author: AndrewLiang
- * Date: 2017/9/24
- * Description: Push Operation to Client
- */
-
 public class PushClientUtil {
     protected final static Logger LOG = LoggerFactory.getLogger(PushClientUtil.class);
     public static final String ALERT = "Test from API Example - alert";

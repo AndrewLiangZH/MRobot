@@ -1,11 +1,5 @@
 package com.team.mrobot.web.vo;
 
-/**
- * Project: TaaS
- * Author: AndrewLiang
- * Date: 2017/9/23
- * Description: Menu
- */
 public class Menu {
     private String name;//name of menu
     private String url;//url of menu

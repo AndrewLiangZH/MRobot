@@ -5,13 +5,6 @@ import org.hibernate.validator.constraints.NotEmpty;
 import javax.persistence.*;
 import javax.validation.constraints.Size;
 
-/**
- * Project: TaaS
- * Author: AndrewLiang
- * Date: 2017/9/23
- * Description: Test TModel for Deep Learning
- */
-
 @Entity
 public class TModel {
 
@@ -33,6 +26,21 @@ public class TModel {
     @Size(max = 128)
     @Column(nullable = false, length = 128)
     private String description;// TModel Description
+
+    @OneToOne(cascade={CascadeType.DETACH})
+    @JoinColumn(name="id")
+    private Catagory catagory;
+
+    private String key;
+
+    private Integer downloads;
+
+    private Integer adoption;
+
+    private Integer score;
+
+    private Integer result;
+
 
     protected TModel() {
     }
@@ -73,5 +81,54 @@ public class TModel {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Catagory getCatagory() {
+        return catagory;
+    }
+
+    public void setCatagory(Catagory catagory) {
+        this.catagory = catagory;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+
+
+    public Integer getDownloads() {
+        return downloads;
+    }
+
+    public void setDownloads(Integer downloads) {
+        this.downloads = downloads;
+    }
+
+    public Integer getAdoption() {
+        return adoption;
+    }
+
+    public void setAdoption(Integer adoption) {
+        this.adoption = adoption;
+    }
+
+    public Integer getScore() {
+        return score;
+    }
+
+    public void setScore(Integer score) {
+        this.score = score;
+    }
+
+    public Integer isResult() {
+        return result;
+    }
+
+    public void setResult(Integer result) {
+        this.result = result;
     }
 }

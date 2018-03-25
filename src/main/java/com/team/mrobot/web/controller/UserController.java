@@ -9,13 +9,6 @@ import org.springframework.web.servlet.ModelAndView;
 import com.team.mrobot.web.domain.User;
 import com.team.mrobot.web.service.UserService;
 
-/**
- * Project: TaaS-test
- * Author: AndrewLiang
- * Date: 2017/9/28
- * Description:
- */
-
 @Controller
 public class UserController {
 

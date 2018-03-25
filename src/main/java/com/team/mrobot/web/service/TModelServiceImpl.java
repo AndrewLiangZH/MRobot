@@ -7,12 +7,6 @@ import org.springframework.stereotype.Service;
 import com.team.mrobot.web.domain.TModel;
 import com.team.mrobot.web.repository.TModelRepository;
 
-/**
- * Project: TaaS
- * Author: AndrewLiang
- * Date: 2017/9/23
- * Description: Implement of TModel Service
- */
 @Service
 public class TModelServiceImpl implements TModelService {
 

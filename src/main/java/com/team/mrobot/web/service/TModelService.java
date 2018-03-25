@@ -4,12 +4,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import com.team.mrobot.web.domain.TModel;
 
-/**
- * Project: TaaS
- * Author: AndrewLiang
- * Date: 2017/9/23
- * Description: Service of TModel
- */
 public interface TModelService {
 
     /**

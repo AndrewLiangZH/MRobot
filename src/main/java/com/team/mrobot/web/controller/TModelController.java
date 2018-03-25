@@ -26,13 +26,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 
-/**
- * Project: TaaS
- * Author: AndrewLiang
- * Date: 2017/9/23
- * Description: Controller of TModel
- */
-
 @Controller
 @RequestMapping("/tmodel")
 public class TModelController {

@@ -6,13 +6,6 @@ import org.hibernate.validator.constraints.NotEmpty;
 import javax.persistence.*;
 import javax.validation.constraints.Size;
 
-/**
- * Project: TaaS
- * Author: AndrewLiang
- * Date: 2017/9/23
- * Description: User or Admin For Web
- */
-
 @Entity
 public class User {
 
@@ -41,13 +34,20 @@ public class User {
     @Column(nullable = false, length = 16)
     private String password;//Login password of user or admin
 
+    private Integer score;
+
+    private Integer type;//User type(0:Administrator,1:Member,2:Customer)
+
     protected User() {
     }
 
-    public User(String name, String username, String password) {
+    public User(String name, String username, String email, String password, Integer score, Integer type) {
         this.name = name;
         this.username = username;
+        this.email = email;
         this.password = password;
+        this.score = score;
+        this.type = type;
     }
 
     public Long getId() {
@@ -88,5 +88,21 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Integer getScore() {
+        return score;
+    }
+
+    public void setScore(Integer score) {
+        this.score = score;
+    }
+
+    public Integer getType() {
+        return type;
+    }
+
+    public void setType(Integer type) {
+        this.type = type;
     }
 }

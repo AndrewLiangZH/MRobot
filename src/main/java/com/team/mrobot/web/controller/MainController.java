@@ -10,13 +10,6 @@ import com.team.mrobot.web.vo.Menu;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Project: TaaS
- * Author: AndrewLiang
- * Date: 2017/9/23
- * Description: Main Controller
- */
-
 @Controller
 public class MainController {
 

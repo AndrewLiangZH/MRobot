@@ -1,12 +1,5 @@
 package com.team.mrobot.web.util;
 
-/**
- * Project: TaaS-test
- * Author: AndrewLiang
- * Date: 2017/9/28
- * Description:
- */
-
 import cn.jiguang.common.ClientConfig;
 import cn.jiguang.common.resp.APIConnectionException;
 import cn.jiguang.common.resp.APIRequestException;
@@ -20,9 +13,6 @@ import cn.jpush.api.push.model.notification.Notification;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * Created by liudengchao on 17/9/20.
- */
 public class PushTest {
     protected final static Logger LOG = LoggerFactory.getLogger(PushTest.class);
     protected static final String APP_KEY = "69385dcff8debe1ffda23caf";
